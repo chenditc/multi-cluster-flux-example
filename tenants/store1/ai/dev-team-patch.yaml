@@ -11,14 +11,17 @@ spec:
         kind: HelmRelease
         metadata:
           name: podinfo
+          namespace: apps
         spec:
           chart:
             spec:
               version: ">=1.0.0"
           values:
-            replicaCount: 2
+            replicaCount: 1
             ui:
               message: "This is store1-ai"
             target:
       target:
         kind: Deployment
+        name: podinfo
+        namespace: apps
