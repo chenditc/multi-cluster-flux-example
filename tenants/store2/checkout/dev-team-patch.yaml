@@ -5,3 +5,22 @@ metadata:
   namespace: apps
 spec:
   path: ./production
+  patches:
+    - patch: |-
+        apiVersion: helm.toolkit.fluxcd.io/v2beta1
+        kind: HelmRelease
+        metadata:
+          name: podinfo
+          namespace: apps
+        spec:
+          chart:
+            spec:
+              version: ">=1.0.0"
+          values:
+            replicaCount: 1
+            ui:
+              message: "This is store1-ai"
+      target:
+        kind: Deployment
+        name: podinfo
+        namespace: apps
