@@ -20,7 +20,6 @@ spec:
             replicaCount: 1
             ui:
               message: "This is store1-ai"
-            target:
       target:
         kind: Deployment
         name: podinfo
