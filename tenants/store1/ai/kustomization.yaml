@@ -4,3 +4,4 @@ resources:
   - ../../base/dev-team
 patchesStrategicMerge:
   - dev-team-patch.yaml
+  - podinfo-values.yaml
