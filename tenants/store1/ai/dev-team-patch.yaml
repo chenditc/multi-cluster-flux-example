@@ -19,3 +19,6 @@ spec:
             replicaCount: 2
             ui:
               message: "This is store1-ai"
+            target:
+      target:
+        kind: Deployment
