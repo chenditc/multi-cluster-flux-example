@@ -8,9 +8,10 @@ spec:
   patches:
     - patch: |-
         - op: add
-          path: /spec/values/ui/ 
+          path: /spec/values/ 
           value: 
-            message: "This is store1-ai, cameral url is http://10.0.1.123:9090/camera"
+            ui:
+              message: "This is store1-ai, cameral url is http://10.0.1.123:9090/camera"
       target:
         kind: HelmRelease
         name: podinfo
