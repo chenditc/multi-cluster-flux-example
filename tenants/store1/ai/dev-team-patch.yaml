@@ -7,7 +7,7 @@ spec:
   path: ./production
   patches:
     - patch: |-
-        - op: replace
+        - op: add
           path: /spec/values/ui/message 
           value: "This is store1-ai, cameral url is http://10.0.1.123:9090/camera"
       target:
