@@ -13,9 +13,6 @@ spec:
           name: podinfo
           namespace: apps
         spec:
-          chart:
-            spec:
-              version: ">=1.0.0"
           values:
             replicaCount: 1
             ui:
