@@ -21,6 +21,6 @@ spec:
             ui:
               message: "This is store1-checkout"
       target:
-        kind: Deployment
+        kind: HelmRelease
         name: podinfo
         namespace: apps
