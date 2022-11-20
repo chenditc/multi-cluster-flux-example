@@ -13,3 +13,7 @@ spec:
     name: flux-system
   path: ./tenants/store2/ai
   prune: true
+  postBuild:
+    substitute:
+      store_name: "store2"
+      camera_url: "http://store2.local:5000/camera"
