@@ -1,0 +1,18 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: dev-team
+  namespace: apps
+spec:
+  path: ./production
+  patches:
+    - patch: |-
+        - op: add
+          path: /spec/values/ 
+          value: 
+            ui:
+              message: "This is store1-ai, cameral url is http://10.0.1.123:9090/camera"
+      target:
+        kind: HelmRelease
+        name: podinfo
+        namespace: apps
