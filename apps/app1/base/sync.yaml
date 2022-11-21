@@ -15,7 +15,7 @@ metadata:
   name: dev-team1
   namespace: app1
 spec:
-  serviceAccountName: dev-team1
+  serviceAccountName: dev-team
   interval: 5m
   sourceRef:
     kind: GitRepository
