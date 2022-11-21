@@ -4,6 +4,7 @@ metadata:
   name: dev-team1
   namespace: app1
 spec:
+  targetNamespace: app1
   path: ./production
   patches:
     - patch: |-
