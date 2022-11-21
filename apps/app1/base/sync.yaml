@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: GitRepository
 metadata:
-  name: dev-team
+  name: dev-team1
   namespace: apps
 spec:
   interval: 1m
@@ -12,14 +12,14 @@ spec:
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
-  name: dev-team
+  name: dev-team1
   namespace: apps
 spec:
-  serviceAccountName: dev-team
+  serviceAccountName: dev-team1
   interval: 5m
   sourceRef:
     kind: GitRepository
-    name: dev-team
+    name: dev-team1
   prune: true
   validation: client
 
