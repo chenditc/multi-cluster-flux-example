@@ -11,7 +11,7 @@ spec:
           path: /spec/values/ 
           value: 
             ui:
-              message: "This is store1-ai, cameral url is http://10.0.1.123:9090/camera"
+              message: "This is store1-ai, cameral url is http://10.0.1.123:9090/camera/get"
       target:
         kind: HelmRelease
         name: podinfo
