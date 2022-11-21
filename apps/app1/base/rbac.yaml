@@ -31,5 +31,5 @@ subjects:
 - kind: User
   name: gotk:app1:reconciler
 - kind: ServiceAccount
-  name: dev-team1
+  name: dev-team
   namespace: app1
